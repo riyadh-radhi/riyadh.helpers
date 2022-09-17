@@ -1,6 +1,6 @@
 #' get company colors
 #'
-#' @param company
+#' @param company A string for the company that the colors are needed for
 #'
 #' @return A list of brand colors of the company
 #' @export
