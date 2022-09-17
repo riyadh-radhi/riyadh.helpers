@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# riyadh.helpers
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+## Personal Package to Save Time in Some of the Repetitive Tasks
+
+This is a personal package that let me borrow code snippets that I use on daily basis at my work such as ggplot2 company theme or branding colors, etc..
+
+## Installation
+
+You can install the development version of riyadh.helpers like so:
+
+``` {r eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("riyadh-radhi/riyadh.helpers")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(riyadh.helpers)
+
+get_company_colors(company = "kapita")
+```
