@@ -23,7 +23,7 @@ theme_kapita <- function(){
     axis.title.x =ggplot2::element_text(size=15,colour = colors_kapita()$title[[1]]),
 
     axis.text.y=ggplot2::element_text(size=15,hjust = 0.5),
-    axis.text.x=ggplot2::element_blank(),
+    axis.text.x=ggplot2::element_text(size=15),
     axis.ticks= ggplot2::element_blank(),
     #####################                     Panel                                  ################
     panel.grid.major.x = ggplot2::element_blank(),
