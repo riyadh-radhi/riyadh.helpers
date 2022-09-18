@@ -31,11 +31,32 @@ You can install the development version of riyadh.helpers like so:
 devtools::install_github("riyadh-radhi/riyadh.helpers")
 ```
 
+
+
 ## Example
 
+### Load the library
 
-```{r example}
+```{r load_library}
 library(riyadh.helpers)
 
-get_company_colors(company = "kapita")
+```
+
+### Exmple One
+
+```{r example_two}
+ggplot2::ggplot(data = datasets::mtcars)+
+  ggplot2::geom_col(ggplot2::aes(x = cyl, y= am))+
+  theme_kapita()+
+  ggplot2::ggtitle(label = "am vs cyl with New Theme")
+
+```
+
+
+### Exmple Two
+
+
+```{r example_one}
+colors_kapita()
+
 ```

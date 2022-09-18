@@ -23,10 +23,27 @@ devtools::install_github("riyadh-radhi/riyadh.helpers")
 
 ## Example
 
+### Load the library
+
 ``` r
 library(riyadh.helpers)
+```
 
-get_company_colors(company = "kapita")
+### Exmple One
+
+``` r
+ggplot2::ggplot(data = datasets::mtcars)+
+  ggplot2::geom_col(ggplot2::aes(x = cyl, y= am))+
+  theme_kapita()+
+  ggplot2::ggtitle(label = "am vs cyl with New Theme")
+```
+
+<img src="man/figures/README-example_two-1.png" width="100%" />
+
+### Exmple Two
+
+``` r
+colors_kapita()
 #> $green
 #>    normal         1         2         3         4         5         6         7 
 #> "#accb46" "#d6e3a3" "#cdde91" "#c4d87f" "#bdd46b" "#b4cf5a" "#9cb73f" "#8ba237" 
